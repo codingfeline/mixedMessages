@@ -7,6 +7,7 @@ const meals = [
     'Dominos',
     'Rainbow Salad',
   ]
+  
   const days = [
     'Monday',
     'Tuesday',
@@ -16,3 +17,7 @@ const meals = [
     'Saturday',
     'Sunday',
   ]
+
+  const randomizer = item => {
+    return Math.floor(Math.random() * item.length)
+  }
