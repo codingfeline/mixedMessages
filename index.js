@@ -7,7 +7,7 @@ const meals = [
     'Dominos',
     'Rainbow Salad',
   ]
-  
+
   const days = [
     'Monday',
     'Tuesday',
@@ -21,3 +21,8 @@ const meals = [
   const randomizer = item => {
     return Math.floor(Math.random() * item.length)
   }
+
+const day = days[randomizer(days)]
+const breakfast = meals[randomizer(meals)]
+const lunch = meals[randomizer(meals)]
+const dinner = meals[randomizer(meals)]
